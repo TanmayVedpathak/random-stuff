@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --text-color: rgba(0, 0, 0, 0.7);
+    --primary-color: rgb(65, 65, 65);
+    --avatar-color: rgb(255, 255, 255);
+    --avatar-bg-color: #fd7e97;
+    --bg-color-1: rgb(255, 255, 255);
+    --bg-color-2: rgb(221, 221, 221);
+    --h1-font-size: 30px;
+    --h2-font-size: 25px;
+    --h3-font-size: 20px;
+    --h4-font-size: 15px;
+    --p-font-size: 13px;
+    --bolder-weight: 900;
+    --bold-weight: 700;
+    --medium-weight: 500;
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    background-color: var(--bg-color-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+}
+
+h4 {
+    font-size: var(--h4-font-size);
+}
+
+p {
+    font-size: var(--p-font-size);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--bg-color-1);
+    padding: 5px 10px;
+    margin: 8px 0;
+}
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--bg-color-1);
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    width: 400px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .star-widgets input {
+    display: none;
+}
+
+.star-widgets label {
+    font-size: 25px;
+    color: #a5a5a5;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+
+.starRadio:not(:checked)~label:hover,
+.starRadio:not(:checked)~label:hover~label {
+    color: #fd4;
+}
+
+.starRadio:checked~label {
+    color: #fd4;
+}
+
+input#rate-5:checked~label {
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+
+.reviewFormInputDiv {
+    margin-top: 8px;
+}
+
+.reviewFormInput {
+    width: 100%;
+    padding: 8px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+.reviewFormInput:focus {
+    outline: none;
+}
+
+.reviewFormFileInput {
+    border: none;
+}
+
+
+.reviewFormLabel {
+    font-size: var(--p-font-size);
+    font-weight: var(--bold-weight);
+}
+
+.reviewSubmitBtn {
+    margin-top: 15px;
+}
+
+.reviewFormFileInput {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #000000;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+}
+
+.reviewFormFileInput:hover {
+    background-color: #bebebe;
+}
+
+.reviewFormFileInput:focus {
+    outline: none;
+}
+
+/* Hide the default file input text and button */
+.reviewFormFileInput::-webkit-file-upload-button {
+    visibility: hidden;
+    display: none;
+}

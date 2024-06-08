@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.outerCircle {
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(red 1%, rgb(156, 156, 156) 5%, rgb(156, 156, 156) 94%);
+    border-radius: 50%;
+    padding: 20px;
+    transform: rotate(-90deg);
+    transition: background 500ms linear;
+}
+
+.innerCircle {
+    width: 460px;
+    height: 460px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.roundedCircle {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.hand {
+    position: absolute;
+    top: 10px;
+    left: 220px;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+    transition: transform 500ms linear;
+
+}
+
+.handBody, .handTip {
+    background-color: red;
+}
+
+.handBody {
+    width: 20px;
+    height: 200px;
+}
+
+.handTip {
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+}

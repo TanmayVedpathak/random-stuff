@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    background: #000;
+}
+
+.container {
+    width: 400px;
+    background: #111;
+    padding: 20px 30px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .star-widgets input {
+    display: none;
+}
+
+.star-widgets label {
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+
+.starRadio:not(:checked)~label:hover,
+.starRadio:not(:checked)~label:hover~label {
+    color: #fd4;
+}
+
+.starRadio:checked~label {
+    color: #fd4;
+}
+
+input#rate-5:checked~label {
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}

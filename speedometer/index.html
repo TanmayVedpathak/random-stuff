@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedometer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3 id="value"
+        style="color:white; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;">0%
+    </h3>
+    <div id="outerCircle" class="outerCircle">
+        <div class="innerCircle">
+            <div class="roundedCircle">
+            </div>
+            <div id="hand" class="hand">
+                <div class="handTip"></div>
+                <div class="handBody"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

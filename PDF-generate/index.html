@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Generate</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1 class="heading">Identity Registration</h1>
+    <div class="container form container__active">
+        <h2>Identity Form</h2>
+
+        <form id="details">
+            <div class="input__container">
+                <div class="input_group">
+                    <label for="">Full Name:</label>
+                    <input data-input-id="fullName" type="text" name="register__details">
+                </div>
+                <div class="input_group">
+                    <label for="">Date of Birth:</label>
+                    <input data-input-id="dob" type="date" name="register__details">
+                </div>
+                <div class="input_group">
+                    <label for="">Phone Number:</label>
+                    <input data-input-id="phoneNumber" type="tel" name="register__details">
+                </div>
+                <div class="input_group">
+                    <label for="">Gender:</label>
+                    <select data-input-id="gender" name="register__details">
+                        <option selected disabled>Select Gender</option>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                        <option value="O">Others</option>
+                    </select>
+                </div>
+                <div class="input_group">
+                    <label for="">Address:</label>
+                    <input data-input-id="address" type="text" name="register__details">
+                </div>
+                <div class="input_group">
+                    <label for="">Profile Image:</label>
+                    <input data-input-id="profileImage" type="file" name="register__details">
+                </div>
+            </div>
+
+            <div class="button__container">
+                <button id="submit__btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="container card">
+        <h2>Universal Card</h2>
+        <div id="card">
+            <div class="card__container">
+                <div class="card__header">
+                    <p>Identity Card</p>
+                </div>
+                <div class="card__content">
+                    <p data-detail-id="uniqueId" class="number"></p>
+                    <div class="wrapper">
+                        <div class="img__wrapper">
+                            <img data-detail-id="profileImage" class="profile__image" src="" alt="pic">
+                        </div>
+                        <div class="text__wrapper">
+                            <p>
+                                <span class="bold">Name: </span><span data-detail-id="fullName"></span>
+                            </p>
+                            <p>
+                                <span class="bold">DoB: </span><span data-detail-id="dob"></span>
+                            </p>
+                            <p>
+                                <span class="bold">Gender: </span><span data-detail-id="gender"></span>
+                            </p>
+                            <p>
+                                <span class="bold">Phone: </span><span data-detail-id="phoneNumber"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <p class="address">
+                        <span class="bold">Address: </span><span data-detail-id="address"></span>
+                    </p>
+                </div>
+                <div class="card__footer">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, officia.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="button__container">
+            <button id="download__btn">Download</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/biz.js"></script>
+    <script src="./js/render.js"></script>
+</body>
+
+</html>
