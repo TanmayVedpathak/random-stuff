@@ -1,0 +1,74 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Tektur', cursive;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.clock {
+    width: 500px;
+    box-shadow: 0px 0px 30px 3px gainsboro;
+    padding: 20px 15px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 430px 50px;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+
+}
+
+.heading {
+    font-size: 5rem;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.heading span {
+    margin: 0px 15px;
+}
+
+.timeMeridiem {
+    min-width: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.radioGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.radioInput input[type="radio"] {
+    display: none;
+}
+
+.radioGroup label {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.radioInput input[type="radio"]:checked+label {
+    opacity: 1;
+}
+
+.opacity {
+    opacity: 1;
+}

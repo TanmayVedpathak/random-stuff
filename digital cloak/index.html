@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Cloak</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="clock">
+        <h1 class="heading">
+          <span id="hr">00</span>:<span id="min">00</span>:<span id="sec">00</span>
+        </h1>
+        <p class="timeMeridiem am" id="am">AM</p>
+        <p class="timeMeridiem pm" id="pm">PM</p>
+      </div>
+
+      <div class="radioGroup">
+        <div class="radioInput">
+          <input type="radio" name="timeFormat" data-time-format="12" class="timeFormat" id="12H" checked />
+          <label for="12H">12H</label>
+        </div>
+        <div class="radioInput">
+          <input type="radio" name="timeFormat" data-time-format="24" class="timeFormat" id="24H" />
+          <label for="24H">24H</label>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
